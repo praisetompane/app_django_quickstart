@@ -1,4 +1,4 @@
-# django_quickstart
+# app_django_quickstart
 a utility to to quickly setup a Django project and app(s) so you can focus on creating your specific unique features.
 
 ## setup instructions:
@@ -58,7 +58,7 @@ a utility to to quickly setup a Django project and app(s) so you can focus on cr
 ## run project:
 ```shell
 # from my_project root directory
-./run_project.sh 
+./run_project.sh
 ```
 
 ## Django explanation
