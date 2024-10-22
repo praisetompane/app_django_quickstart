@@ -1,25 +1,27 @@
 # app_django_quickstart
-a utility to to quickly setup a Django project and app(s) so you can focus on creating your specific unique features.
+## objectives:
+- facade to reduce Django command ceremony typing.
+- user notes for quick reference.
 
-## setup instructions:
+## setup instructions
 - install `python 3.11` or higher.
 - clone repo:
     ```shell
     git clone git@github.com:praisetompane/django_quickstart.git
     ```
-## package management:
+## package management
 - install pipenv: https://pypi.org/project/pipenv/
 
 ## install Django
-    ```shell
-    # from django_quickstart root directory
-    pipenv install
-    ```
+```shell
+# from django_quickstart root directory
+pipenv install
+```
 ## activate a shell within virtual environment
-    ```shell
-    # from django_quickstart root directory
-    pipenv shell
-    ```
+```shell
+# from django_quickstart root directory
+pipenv shell
+```
 
 # usage
 **NB**: substitute "my_project" and "my_app" with your actual names.
