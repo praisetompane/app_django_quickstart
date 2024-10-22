@@ -13,7 +13,7 @@ a utility to to quickly setup a Django project and app(s) so you can focus on cr
 ## install Django
     ```shell
     # from django_quickstart root directory
-    ./setup.sh
+    pipenv install
     ```
 ## activate a shell within virtual environment
     ```shell
