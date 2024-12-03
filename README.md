@@ -4,24 +4,7 @@
 - user notes for quick reference.
 
 ## setup instructions
-- install `python 3.11` or higher.
-- clone repo:
-    ```shell
-    git clone git@github.com:praisetompane/django_quickstart.git
-    ```
-## package management
-- install pipenv: https://pypi.org/project/pipenv/
-
-## install Django
-```shell
-# from django_quickstart root directory
-pipenv install
-```
-## activate a shell within virtual environment
-```shell
-# from django_quickstart root directory
-pipenv shell
-```
+- uses devcontainers
 
 # usage
 **NB**: substitute "my_project" and "my_app" with your actual names.
@@ -31,11 +14,11 @@ pipenv shell
 # from django_quickstart root directory
 ./create_project.sh my_project
 ```
-- this creates does the following:
+- this creates the following:
    - a Django project folder called my_project.
    - installs two scripts:
-      - create_app.sh : a shorthand to create a Django app for your project
-      - run_project.sh : a shorthand to run your Django project
+      - create_app.sh: a shorthand to create a Django app for your project
+      - run_project.sh: a shorthand to run your Django project
 
 ## create app:
 - move to project root folder:
@@ -64,7 +47,7 @@ pipenv shell
 ```
 
 ## Django explanation
-The `store_front` project and `notes` app have comments with prefix 'user added:'. <br>
+The `my_project` project and `my_app` app have comments with prefix 'user added:'. <br>
 These comments explain how everything fits together. <br>
 Search for these in explorer. <br>
 example: <br>

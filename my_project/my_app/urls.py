@@ -6,8 +6,9 @@
     usage:
         include in main urls.py
 """
+
 from django.urls import path
-from . import views
+from my_app import views
 
 """
     user added:

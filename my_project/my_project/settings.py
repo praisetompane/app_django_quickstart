@@ -37,9 +37,13 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "my_app",
+    # "debug_toolbar",  # user added: install debug tool bar app
 ]
 
+# user added: hook into Django's request => response processing
 MIDDLEWARE = [
+    # "debug_toolbar.middleware.DebugToolbarMiddleware",  # user added: debug tool bar middleware
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -47,6 +51,15 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+]
+
+"""
+    user added: add address so debug tool bar renders
+    constraint:
+        debug tool bar only renders when applications IP address exists in this setting
+"""
+INTERNAL_IPS = [
+    "127.0.0.1",
 ]
 
 ROOT_URLCONF = "my_project.urls"
