@@ -1,0 +1,25 @@
+{
+	"name": "app_django_quickstart",
+	"build": {
+		"dockerfile": "../Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.black-formatter",
+				"ms-python.debugpy",
+				"ms-azuretools.vscode-docker"
+			],
+			"settings": {}
+		}
+	},
+	"forwardPorts": [
+		"8080:8080"
+	],
+	"workspaceMount": "source=${localWorkspaceFolder},target=/app_django_quickstart,type=bind,consistency=delegated",
+	"workspaceFolder": "/app_django_quickstart",
+	"runArgs": [],
+	"postStartCommand": "cd ./store_front && python manage.py runserver"
+}

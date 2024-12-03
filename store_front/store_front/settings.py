@@ -37,12 +37,12 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "notes",
-    "debug_toolbar",  # user added: install debug tool bar app
+    #"debug_toolbar",  # user added: install debug tool bar app
 ]
 
 # user added: hook into Django's request => response processing
 MIDDLEWARE = [
-    "debug_toolbar.middleware.DebugToolbarMiddleware",  # user added: debug tool bar middleware
+    #"debug_toolbar.middleware.DebugToolbarMiddleware",  # user added: debug tool bar middleware
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
