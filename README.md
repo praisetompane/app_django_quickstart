@@ -9,17 +9,6 @@
 # usage
 **NB**: substitute "my_project" and "my_app" with your actual names.
 
-## create project:
-```shell
-# from django_quickstart root directory
-./create_project.sh my_project
-```
-- this creates the following:
-   - a Django project folder called my_project.
-   - installs two scripts:
-      - create_app.sh: a shorthand to create a Django app for your project
-      - run_project.sh: a shorthand to run your Django project
-
 ## create app:
 - move to project root folder:
     ```shell
