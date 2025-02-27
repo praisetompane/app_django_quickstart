@@ -2,7 +2,9 @@
 
 ## Objectives
 - Facade to reduce Django command ceremony typing.
-- Inline Django notes for quick reference.
+- In-line Django notes for quick reference.
+
+## Project Structure
 
 ## Dependencies
 - [Django](https://www.djangoproject.com)
@@ -48,3 +50,16 @@ Search for these in explorer. <br>
 example: <br>
 
 ![start system output](./docs/user_added_comments.png)
+
+## Git Conventions
+- **NB:** the master is locked and all changes must come through a Pull Request.
+- commit messages:
+    - provide concise commit messages that describe what you have done.
+        ```shell
+        # example:
+        git commit -m "feat(core): algorithm" -m"implement my new shiny faster algorithm"
+        ```
+    - screen shot of Githb view
+    - references: 
+        - https://www.conventionalcommits.org/en/v1.0.0/
+        - https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/
