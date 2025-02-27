@@ -1,41 +1,47 @@
 # app_django_quickstart
-## objectives:
-- facade to reduce Django command ceremony typing.
-- user notes for quick reference.
 
-## setup instructions
-- uses devcontainers
+## Objectives
+- Facade to reduce Django command ceremony typing.
+- Inline Django notes for quick reference.
 
-# usage
+## Dependencies
+- [Django](https://www.djangoproject.com)
+
+## Setup Instructions
+- Install [Docker](https://docs.docker.com/get-started/)
+- The repository is configured to use [devcontainers](https://containers.dev) for development.
+    - [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
+
+## Usage
 **NB**: substitute "my_project" and "my_app" with your actual names.
 
-## create app:
-- move to project root folder:
+- Create project
     ```shell
-    # from django_quickstart root directory
+    ./create_project.sh my_project
+    ```
+
+- Create app(s)
+    ```shell
     cd my_project
     ```
-- create app(s):
+
     ```shell
-    # from my_project root directory
     ./create_app.sh my_app
     ```
 
-- apply all migrations to the project:
+- Apply all migrations to the project
     ```shell
-    # from my_project root directory
     python manage.py migrate
     ```
-- project state after this:
+- Project state after this
 ![start system output](./docs/directory_tree.png)
 
-## run project:
-```shell
-# from my_project root directory
-./run_project.sh
-```
+- Run Program
+    ```shell
+    ./start_system_development.sh
+    ```
 
-## Django explanation
+## Django Explanation
 The `my_project` project and `my_app` app have comments with prefix 'user added:'. <br>
 These comments explain how everything fits together. <br>
 Search for these in explorer. <br>

@@ -1,8 +1,7 @@
 #!/bin/zsh
-#
-#    quick utility to create Django app
-#    Example:
-#    $ ./create_app.sh my_app
+# quick utility to create Django app
+# Example:
+# $ ./create_app.sh my_app
 #
 
 app=$1
